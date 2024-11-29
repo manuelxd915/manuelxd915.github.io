@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Subredes - CONALEP Juárez III</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="/js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>CONALEP Juárez III</h1>
+            <h2>Paradigmas de Programación - Grupo 318</h2>
+        </div>
+
+        <div class="form-group">
+            <label for="ip">IP de red:</label>
+            <input type="text" id="ip" >
+        </div>
+
+        <div class="form-group">
+            <label for="mascara">Máscara de red:</label>
+            <input type="text" id="mascara" >
+        </div>
+
+        <div class="form-group">
+            <label for="subredes">Cantidad de subredes deseadas:</label>
+            <input type="number" id="subredes" >
+        </div>
+
+        <button onclick="calcularSubredes()">Calcular Subredes</button>
+
+        <table id="resultadoTabla">
+            <thead>
+                <tr>
+                    <th>Primera IP utilizable</th>
+                    <th>Última IP utilizable</th>
+                    <th>Máscara de red</th>
+                    <th>Broadcast</th>
+                </tr>
+            </thead>
+            <tbody id="tablaBody">
+            </tbody>
+        </table>
+    </div>
+
+   
+</body>
+</html>
